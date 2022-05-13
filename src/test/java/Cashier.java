@@ -1,11 +1,13 @@
 import org.junit.Assert;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Cashier {
-    public static void main(String[] args) throws NoSuchElementException, InterruptedException {
+    @Test
+    public void testCashier() throws NoSuchElementException, InterruptedException {
         System.setProperty("webdriver.chrome.driver","/Users/vitalii/IdeaProjects/wd/chromedriver");
         ChromeDriver driver = new ChromeDriver();
         driver.get("https://rc.conquestador.com/en-int/login");
@@ -30,4 +32,7 @@ public class Cashier {
 
         driver.quit();
     }
+//    public static void main(String[] args) throws NoSuchElementException, InterruptedException {
+//
+//    }
 }
